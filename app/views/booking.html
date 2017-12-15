@@ -1,0 +1,11 @@
+<div class="modal-header text-center">
+  <h3 class="modal-title">Confirmation</h3>
+</div>
+<div class="modal-body">
+  <p>Do you want to reserve a place<strong>{{ training.name }}</strong> on day <strong>{{training.date | date:"MM/dd/yyyy"}}</strong>at <strong>{{training.date | date:"H:mm"}}</strong>.</p>
+  <p>To email <strong>{{ customer.email }}</strong> a link will be sent which clicking will confirm your reservation.</p>
+  <button class="btn btn-primary btn-block" type="button" ng-click="bookTraining(customer, training)">Send a confirmation link</button>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-default btn-block" type="button" ng-click="cancel()">Cancel</button>
+</div>

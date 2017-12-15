@@ -1,0 +1,67 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  background: #111111 url('../images/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@font-face {
+  font-family: 'Capture Smallz Regular'; /*a name to be used later*/
+  src: url('fonts/Capsmall.ttf'); /*URL to font*/
+}
+
+#navbar-logo {
+  font-family: 'Capture Smallz Regular', sans-serif;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+#wait-message {
+  color: #bbbbbb;
+}
+
+/* Start http://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap */
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;    /* vertical alignment of the inline element */
+  height: 100%;
+}
+
+.vertical-center > .container {
+  max-width: 100%;
+
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  /* reset the font property */
+  font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* End */
+
+.shadow {
+  box-shadow: 0 0 30px black;
+  padding-right: 0;
+}
+
+/* Start required by https://angular-ui.github.io/bootstrap */
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer;
+}
+/* End */
